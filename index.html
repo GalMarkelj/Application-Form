@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- Css filei -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/gutter.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/dimensions.css">
+    <link rel="stylesheet" href="styles/radio-check-box.css">
+    <link rel="stylesheet" href="styles/btn__title.css">
+    <link rel="stylesheet" href="styles/indentity-box.css">
+    <link rel="stylesheet" href="styles/btn__submit.css">
+    <link rel="stylesheet" href="styles/reason-box.css">
+    <link rel="stylesheet" href="styles/container.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+
+    <title>Form</title>
+</head>
+<body class="color--white height--min-100v flex flex--vertical flex--align-item-center flex--justify-center">
+    
+    <div class="container flex flex--vertical flex--align-item-center overflow--H">
+        <h1 class="f--xs"> Prijava na CPP za kategorijo A / B </h1>
+
+        <div class="identity-container flex flex--vertical flex--align-item-center flex--justify-center">
+            <div class="title-container flex flex--align-item-center flex--justify-aside width--100p">
+                <!-- <button class="btn__title cursor--pointer color--white f--s width--50p flex flex--justify-center flex--align-item-center">G.</button>
+                <button class="btn__title cursor--pointer color--white f--s width--50p flex flex--justify-center flex--align-item-center">Ga.</button> -->
+                <div id="G1"class="identity-form width--50p f--s flex flex--justify-center">
+                    <input type="radio" id="G" name="g/ga" value="g.">
+                    <label for="G" class="width--100p flex flex--justify-center">G.</label>
+                </div>
+                <div class="identity-form width--50p f--s flex flex--justify-center">
+                    <input type="radio" id="Ga" name="g/ga" value="ga.">
+                    <label for="Ga" class="width--100p flex flex--justify-center">Ga.</label>
+                </div>
+            </div>
+            <div class="indentity-box">
+                <form>
+                    <input id="input__name" type="text" class="identity__input cursor--pointer width--100p f--s color--white" placeholder="Ime" required>
+                    <input id="input__surname" type="text" class="identity__input cursor--pointer width--100p f--s color--white" placeholder="Priimek" required>
+                </form>
+            </div>
+        </div>
+
+        <div class="dropdown-menu margin-top--1em flex flex--justify-aside flex--align-item-center width--100p flex--vertical">
+            <label for="options" class="f--xs">Ali izpit prvič opravljate ? </label>
+            <select name="options" id="options" class="margin-top--1em color--white f--s">
+                <option value="">--Izberite svojo možnost--</option>
+                <option id="option1" value="option1">Ponovno opravljanje izpita</option>
+                <option id="option2" value="option2">Izpit opravljam prvič</option>
+            </select>
+        </div>
+
+        <div id="reason-box" class="reason-box margin-top--1em flex flex--vertical flex--justify-center flex--align-item-center width--100p" >
+            <!-- <input id="option__2" class="reason__input f--s width--100p cursor--pointer color--white" type="text" placeholder="Razlog za ponovno opravljanje izpita"> -->
+            <h2 class="f--m">Razlog za ponovno opravljanje izpita</h2>
+            <textarea id="textarea" class="reason__input f--s width--100p cursor--pointer color--white"></textarea>
+        </div>
+
+        <div id="check-radio-box" class="checkbox-radio-box margin-top--1em flex flex--justify-spread width--100p">
+
+            <div class="radio-field flex flex--justify-center flex--align-item-center flex--vertical">
+                <h3>Kategorija A</h2>
+                <form>
+                    <fieldset>
+                        <div class="radioBox-before__container flex flex--align-item-center">
+                            <input type="radio" id="rb1" name="A" value="A1" class="radio-box cursor--pointer" >
+                            <label for="rb1" class="radioBox-before f--s cursor--pointer flex flex--align-item-center" data-x="X">A1</label>
+                          </div>
+                          
+                          <div class="radioBox-before__container flex flex--align-item-center">
+                            <input type="radio" id="rb2" name="A" value="A2" class="radioBox-before radio-box cursor--pointer">
+                            <label for="rb2" class="radioBox-before f--s cursor--pointer flex flex--align-item-center">A2</label>
+                          </div>
+                          
+                          <div class="radioBox-before__container flex flex--align-item-center">
+                            <input type="radio" id="rb3" name="A" value="A3" class="radioBox-before radio-box cursor--pointer">
+                            <label for="rb3" class="radioBox-before f--s cursor--pointer flex flex--align-item-center">A3</label>
+                          </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="checkbox-container flex flex--justify-center flex--vertical flex--align-item-center">
+                <h3>Kategorija B</h2>
+                <from>
+                    <fieldset>
+                        <div class="checkBox-before__container checkbox flex flex--align-item-center">
+                            <input type="checkbox" id="cb3" class="check-box cursor--pointer" value="B1">
+                            <label for="cb3" class="checkBox-before f--s flex flex--align-item-center cursor--pointer">B1</label>
+                        </div>
+                        <div class="checkBox-before__container checkbox flex flex--align-item-center">
+                            <input type="checkbox" id="cb4" class="check-box cursor--pointer" value="B2">
+                            <label for="cb4" class="checkBox-before f--s flex flex--align-item-center cursor--pointer">B2</label>
+                        </div>
+                        <div class="checkBox-before__container checkbox flex flex--align-item-center">
+                            <input type="checkbox" id="cb5" class="check-box cursor--pointer" value="B3">
+                            <label for="cb5" class="checkBox-before f--s flex flex--align-item-center cursor--pointer">B3</label>
+                        </div>
+                    </fieldset>
+                </from>
+            </div>
+
+        </div>
+
+        <div class="btn-field width--100p">
+            <button id="btn__submit" type="submit" class="btn__submit margin-top--1em float--R f--s color--white">Send</button>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/title.js"></script>
+    <script src="js/option-display.js"></script>
+</body>
+</html>

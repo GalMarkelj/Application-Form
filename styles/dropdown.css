@@ -1,0 +1,25 @@
+.dropdown-menu select {
+    width: 100%;
+    outline: none;
+    border: solid rgba(255, 166, 0, 0.445);
+    background-color: rgba(255, 145, 0, 0.089);
+    box-sizing: border-box;
+    text-align: center;
+}
+.dropdown-menu option {
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+}
+#options * {
+    background: rgb(223, 119, 2);
+}
+@media (min-width: 900px) {
+    .dropdown-menu select {
+        padding: .5em;
+    }
+    #options * {
+        font-size: 1.2rem;
+    }
+}

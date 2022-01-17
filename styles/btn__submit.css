@@ -1,0 +1,14 @@
+.btn__submit {
+    background: rgba(255, 166, 0, 0.041);
+    border-radius: .2em;
+    outline: none;
+    border: solid rgba(255, 166, 0, 0.445);
+    padding: .3em;
+    margin-top: .5em;
+}
+.btn__submit:hover {
+    box-shadow: 0 0 10px white;
+}
+.btn__submit:active {
+    background-color: rgba(255, 166, 0, 0.315);
+}

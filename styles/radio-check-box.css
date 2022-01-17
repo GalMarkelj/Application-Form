@@ -1,0 +1,98 @@
+#cb1, #cb2, #rb1, #rb2, #rb3, #cb3, #cb4, #cb5 {
+    display: none;
+}
+.checkBox-before::before,
+.radioBox-before::before {
+    content: ' ';
+    width: .6em;
+    height: .6em;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(255, 166, 0);
+    background: rgba(255, 166, 0, 0.11);
+    margin-right: .3em;
+}
+.rad
+.radioBox-before__container {
+    margin-top: .2em;
+}
+.checkBox-before__container {
+    margin-top: .5em;
+}
+.checkBox-before::before {
+    border-radius: .1em;
+}
+.radioBox-before::before {
+    border-radius: 50%;
+}
+.checkBox-before {
+    padding: 7px;
+}
+.radioBox-before {
+    padding: 10px;
+}
+
+.checkBox-before:hover::before,
+.radioBox-before:hover::before {
+    box-shadow: 0px 0px 20px white;
+}
+
+
+.checkBox-before__container input[type='checkbox']:checked +  label::before{
+    content: '\002714';
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+.checkBox-before__container input[type='checkbox']:checked +  label{
+    content: '\002714';
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+
+.radioBox-before__container input[type='radio']:checked +  label::before{
+    content: '\00d7';
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+    background-color: rgba(255, 166, 0, 0.473);
+}
+.radioBox-before__container input[type='radio']:checked +  label{
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+.radio-field {
+    margin-left: 1em;
+}
+.checkbox-container {
+    margin-right: 1em;
+}
+fieldset {
+    border: none;
+}
+
+.checkbox-radio-box {
+    border-top: solid rgba(255, 166, 0, 0.445);;
+    border-bottom: solid rgba(255, 166, 0, 0.445);;
+}
+
+@media (min-width: 600px) {
+    .radio-field {
+        margin-left: 4em;
+    }
+    .checkbox-container {
+        margin-right: 4em;
+    }
+}
+
+#check-radio-box {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+@keyframes fade-in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+  }

@@ -1,0 +1,75 @@
+/* Font-weight */
+.f--normal {
+    font-weight: normal;
+}
+.f--lighter {
+    font-weight: lighter;
+}
+.f--bolder {
+    font-weight: bolder;
+}
+.f--bold {
+    font-weight: bold;
+}
+/* Font-size */
+html {
+    --font-default: 1.5em;
+    --font-m : 1.1em;
+    --font-s : .9em;
+    --font-xs : 1.3em;
+}
+.f--default {
+    font-size: var(--font-default);
+}
+.f--m {
+    font-size: var(--font-m);
+}
+.f--s {
+    font-size: var(--font-s);
+}
+.f--xs {
+    font-size: var(--font-xs);
+}
+/* text color */
+html {
+    --text-color-default : black;
+}
+.color-default {
+    color: var(--text-color-default);
+}
+.color--white {
+    color: white;
+}
+.color--black {
+    color: black;
+}
+.color--inherit {
+    color: inherit;
+}
+/* text-decoration */
+.t--decoration-none {
+    text-decoration: none;
+}
+.t--decoration-underline {
+    text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+    .f--s {
+        font-size: 2em;
+    }
+}
+@media (min-width: 600px) {
+    .f--s {
+        font-size: 1.2em;
+    }
+    .f--xs {
+        font-size: 2em;
+    }
+    .f--m {
+        font-size: 1.6em;
+    }
+    .btn__submit {
+        font-size: 1.5em;
+    }
+}

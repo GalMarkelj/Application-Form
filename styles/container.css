@@ -1,0 +1,19 @@
+.container {
+    border: solid rgba(255, 102, 0, 0.315);
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1em;
+    margin-top: 2em;
+    max-width: 1200px;
+    
+}
+.identity-container {
+    max-width: 1000px;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .identity-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}

@@ -1,0 +1,30 @@
+/* .btn__title {
+    background: rgba(255, 166, 0, 0.041);
+    border: solid rgba(255, 166, 0, 0.445);
+
+}
+.btn__title:hover {
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    background-color: rgba(255, 166, 0, 0.548);
+}
+
+.btn__title:focus {
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    background-color: rgba(255, 166, 0, 0.315);
+} */
+
+#G, #Ga {
+    display: none;
+}
+.identity-form{
+    background: rgba(255, 166, 0, 0.041);
+    border: solid rgba(255, 166, 0, 0.445);
+}
+.identity-form:hover {
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    background-color: rgba(255, 166, 0, 0.548);
+}
+.identity-form input[type='radio']:checked + label{
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    background-color: rgba(255, 166, 0, 0.315);
+}
